@@ -23,21 +23,21 @@ from pyrogram.types import (
     ReplyKeyboardRemove,
 )
 
-api_id = 14007265
-api_hash = "00d4a84c7577da1bfe41ba5ef04906c8"
-bot_token = "5720844205:AAHdRVRoica75hXtbXmrTXYwdn4t6nFjBx0"
+api_id = 19867363
+api_hash = "c39149b542ef84337e65c6ec6dc07bd3"
+bot_token = "7354869081:AAEJn-6SL96X4FImx7YdQfRIVqJzFYIP5T0"
 
 bot = Client("namebot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
-adminlist = [1167279502, 5606411960]
+adminlist = [1998605919, 1161256697]
 
-cluster = "mongodb+srv://mohaa:maalaa09@cluster0.1hd9iha.mongodb.net/approve?retryWrites=true&w=majority"
+cluster = "mongodb+srv://Terez:<password>@cluster0.pyqkpvr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 clienters = MongoClient(cluster)
 print("DB Connected")
 
 
 async def join(uid, client, message):
-    chat_id = "sommoney"
+    chat_id = "terezmusic"
     user_id = uid
     try:
         a = await bot.get_chat_member(chat_id, user_id)
@@ -133,13 +133,13 @@ async def errr(r, tt, mid, price, cid, id2, username):
                 disable_web_page_preview=True,
             )
             await bot.send_message(
-                1167279502,
+                1998605919,
                 text=f"{res3}",
                 reply_markup=reply_markup,
                 disable_web_page_preview=True,
             )
             await bot.send_message(
-                5606411960,
+                1161256697,
                 text=f"{res3}",
                 reply_markup=reply_markup,
                 disable_web_page_preview=True,
@@ -157,13 +157,13 @@ async def errr(r, tt, mid, price, cid, id2, username):
                 disable_web_page_preview=True,
             )
             await bot.send_message(
-                1167279502,
+                1998605919,
                 text=f"{res3}",
                 reply_markup=reply_markup,
                 disable_web_page_preview=True,
             )
             await bot.send_message(
-                5606411960,
+                1161256697,
                 text=f"{res3}",
                 reply_markup=reply_markup,
                 disable_web_page_preview=True,
@@ -414,7 +414,7 @@ async def welcome(client, message):
                     # print(tt.total_seconds())
                     if tt.total_seconds() >= float(tr):
                         await message.reply_text(
-                            text=f"**-»** {message.from_user.mention} Kusoo dhawaw SomInfo Premium, Subscription kaagu uu dhacay, soo qor /iibso si aad mar labaad isku diwaangaliso.\n\n**-»** Haddii aad caawin u bahantahay ama cilld ay kuhaysato la xidhiidh @Somali_Hacker",
+                            text=f"**-»** {message.from_user.mention} Kusoo dhawaw SomInfo Premium, Subscription kaagu uu dhacay, soo qor /iibso si aad mar labaad isku diwaangaliso.\n\n**-»** Haddii aad caawin u bahantahay ama cilld ay kuhaysato la xidhiidh @Terez1s",
                             reply_to_message_id=message.id,
                         )
                         add.delete_one({"_id": f"{nid}"})
@@ -425,13 +425,13 @@ async def welcome(client, message):
                         if 86400 > tl > 3600:
                             tot = tot1 / 3600
                             await message.reply_text(
-                                text=f"**-»** {message.from_user.mention} Kusoo dhawaw SomInfo Premium, waxaa kuu hadhay {int(tot)} saacadood.\n\n**-»** Haddii aad caawin u bahantahay ama cilld ay kuhaysato la xidhiidh @Somali_Hacker",
+                                text=f"**-»** {message.from_user.mention} Kusoo dhawaw SomInfo Premium, waxaa kuu hadhay {int(tot)} saacadood.\n\n**-»** Haddii aad caawin u bahantahay ama cilld ay kuhaysato la xidhiidh @terez1s",
                                 reply_to_message_id=message.id,
                             )
                         elif tl <= 60:
                             tot = tot1 / 60
                             await message.reply_text(
-                                text=f"**-»** {message.from_user.mention} Kusoo dhawaw SomInfo Premium, waxaa kuu hadhay {int(tot)} daqiiqadood.\n\n**-»** Haddii aad caawin u bahantahay ama cilld ay kuhaysato la xidhiidh @Somali_Hacker",
+                                text=f"**-»** {message.from_user.mention} Kusoo dhawaw SomInfo Premium, waxaa kuu hadhay {int(tot)} daqiiqadood.\n\n**-»** Haddii aad caawin u bahantahay ama cilld ay kuhaysato la xidhiidh @terez1s",
                                 reply_to_message_id=message.id,
                             )
                         else:
@@ -469,7 +469,7 @@ async def welcome(client, message):
 
 @bot.on_message(filters.command(commands=["start"]) & filters.group)
 async def welcomeg(client, message):
-    chat_id = "sommoney"
+    chat_id = "terezmusic"
     user_id = message.from_user.id
     try:
         a = await bot.get_chat_member(chat_id, user_id)
@@ -509,7 +509,7 @@ async def welcomeg(client, message):
                     # print(tt.total_seconds())
                     if tt.total_seconds() >= float(tr):
                         await message.reply_text(
-                            text=f"**-»** {message.from_user.mention} Kusoo dhawaw SomInfo Premium, Subscriptionka groupku uu dhacay, luuqa iigu soo qor /iibso si aad mar labaad u diwaangaliso groupka.\n\n**-»** Haddii aad caawin u bahantahay ama cilld ay kuhaysato la xidhiidh @Somali_Hacker",
+                            text=f"**-»** {message.from_user.mention} Kusoo dhawaw SomInfo Premium, Subscriptionka groupku uu dhacay, luuqa iigu soo qor /iibso si aad mar labaad u diwaangaliso groupka.\n\n**-»** Haddii aad caawin u bahantahay ama cilld ay kuhaysato la xidhiidh @terez1s",
                             reply_to_message_id=message.id,
                         )
                         add.delete_one({"_id": f"{nid}"})
@@ -519,19 +519,19 @@ async def welcomeg(client, message):
                         if 86400 > tl > 3600:
                             tot = tot1 / 3600
                             await message.reply_text(
-                                text=f"**-»** {message.from_user.mention} Kusoo dhawaw SomInfo Premium, waxaa ka hadhay dhicitanka subscriptionka groupkan {int(tot)} saacadood.\n\n**-»** Haddii aad caawin u bahantahay ama cilld ay kuhaysato la xidhiidh @Somali_Hacker",
+                                text=f"**-»** {message.from_user.mention} Kusoo dhawaw SomInfo Premium, waxaa ka hadhay dhicitanka subscriptionka groupkan {int(tot)} saacadood.\n\n**-»** Haddii aad caawin u bahantahay ama cilld ay kuhaysato la xidhiidh @terez1s",
                                 reply_to_message_id=message.id,
                             )
                         elif tl <= 60:
                             tot = tot1 / 60
                             await message.reply_text(
-                                text=f"**-»** {message.from_user.mention} Kusoo dhawaw SomInfo Premium, waxaa ka hadhay dhicitanka subscriptionka groupkan {int(tot)} daqiiqadood.\n\n**-»** Haddii aad caawin u bahantahay ama cilld ay kuhaysato la xidhiidh @Somali_Hacker",
+                                text=f"**-»** {message.from_user.mention} Kusoo dhawaw SomInfo Premium, waxaa ka hadhay dhicitanka subscriptionka groupkan {int(tot)} daqiiqadood.\n\n**-»** Haddii aad caawin u bahantahay ama cilld ay kuhaysato la xidhiidh @terez1s",
                                 reply_to_message_id=message.id,
                             )
                         else:
                             tot = tot1 / 86400
                             await message.reply_text(
-                                text=f"**-»** {message.from_user.mention} Kusoo dhawaw SomInfo Premium, waxaa ka hadhay dhicitanka subscriptionka groupkan {int(tot)} maalmood.\n\n**-»** Haddii aad caawin u bahantahay ama cilld ay kuhaysato la xidhiidh @Somali_Hacker",
+                                text=f"**-»** {message.from_user.mention} Kusoo dhawaw SomInfo Premium, waxaa ka hadhay dhicitanka subscriptionka groupkan {int(tot)} maalmood.\n\n**-»** Haddii aad caawin u bahantahay ama cilld ay kuhaysato la xidhiidh @terez1s",
                                 reply_to_message_id=message.id,
                             )
                 # else:
@@ -757,7 +757,7 @@ async def req(client, message):
                                     write.write("\n".join(read))
                                     # print(saa["serviceInfo"]["responseAttributes"]["ReceiverInfo"]['NAME'])
                                     await message.reply_text(
-                                        text="**-»** 𝐌𝐚𝐜𝐥𝐮𝐦𝐚𝐝𝐤𝐚 𝐍𝐮𝐦𝐛𝐞𝐫𝐤𝐚\n\n**-» NAME:** ||{}||\n\n**-»** 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @Sommoney".format(
+                                        text="**-»** 𝐌𝐚𝐜𝐥𝐮𝐦𝐚𝐝𝐤𝐚 𝐍𝐮𝐦𝐛𝐞𝐫𝐤𝐚\n\n**-» NAME:** ||{}||\n\n**-»** 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: @terezmusic".format(
                                             name
                                         ),
                                         reply_to_message_id=message.id,
@@ -860,7 +860,7 @@ async def callback(message, CallbackQuery):
         await CallbackQuery.edit_message_media(
             InputMediaPhoto(
                 "IMG_5019.PNG",
-                caption="[𝗦𝗼𝗺𝗜𝗻𝗳𝗼 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻](https://t.me/Som_InfoBot)\nSi aan xadi lahayn u isticmaal SomInfo hal bil oo dhamaystiran. Ka faaidayso qiimo dhimista.",
+                caption="[𝗦𝗼𝗺𝗜𝗻𝗳𝗼 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻](https://t.me/SominfBot)\nSi aan xadi lahayn u isticmaal SomInfo hal bil oo dhamaystiran. Ka faaidayso qiimo dhimista.",
             ),
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -873,7 +873,7 @@ async def callback(message, CallbackQuery):
         await CallbackQuery.edit_message_media(
             InputMediaPhoto(
                 "IMG_5021.PNG",
-                caption="[𝗦𝗼𝗺𝗜𝗻𝗳𝗼 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻](https://t.me/Som_InfoBot)\nSi aan xadi lahayn ku isticmaal SomInfo Premium groupkaga hal bil oo dhamaystiran.",
+                caption="[𝗦𝗼𝗺𝗜𝗻𝗳𝗼 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻](https://t.me/SomInfBot)\nSi aan xadi lahayn ku isticmaal SomInfo Premium groupkaga hal bil oo dhamaystiran.",
             ),
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -887,7 +887,7 @@ async def callback(message, CallbackQuery):
         while True:
             mohh = await bot.ask(
                 CallbackQuery.message.chat.id,
-                "Fadlan soo qor Numberka aad rabto inaad lacagta ku bixiso.\n**EVC**: [25261xxxxxxx](https://t.me/Som_InfoBot)\n**ZAD**: [25263xxxxxxx](https://t.me/Som_InfoBot)",
+                "Fadlan soo qor Numberka aad rabto inaad lacagta ku bixiso.\n**EVC**: [25261xxxxxxx](https://t.me/SominfBot)\n**ZAD**: [25263xxxxxxx](https://t.me/Sominfbot)",
                 disable_web_page_preview=True,
             )
             if mohh.text == "/start" or mohh.text == "/iibso" or "/no" in mohh.text:
@@ -951,7 +951,7 @@ async def callback(message, CallbackQuery):
         while True:
             chat = await bot.ask(
                 CallbackQuery.message.chat.id,
-                "Fadlan soo dir Usernameka Groupka aad rabto inaad ku isticmasho SomInfo Premium,\n[[Groupka waa inuu PUPLIC ahaadaa]](https://t.me/Som_InfoBot).\n\n**USERNAME**: [@GroupUsername](https://t.me/Som_InfoBot)",
+                "Fadlan soo dir Usernameka Groupka aad rabto inaad ku isticmasho SomInfo Premium,\n[[Groupka waa inuu PUPLIC ahaadaa]](https://t.me/SomInfbot).\n\n**USERNAME**: [@GroupUsername](https://t.me/Sominfbot)",
                 disable_web_page_preview=True,
             )
             try:
@@ -978,7 +978,7 @@ async def callback(message, CallbackQuery):
                     tot = tot1 / 86400
                     await bot.send_message(
                         CallbackQuery.message.chat.id,
-                        text=f"**-»** Groupka {chatt.title} uu diwaangashanyahay, subscription-ka wuxuu dhacayaa {int(tot)} maalmood kadib.\n\n**-»** Haddii aad caawin u bahantahay ama cilld ay kuhaysato la xidhiidh @Somali_Hacker",
+                        text=f"**-»** Groupka {chatt.title} uu diwaangashanyahay, subscription-ka wuxuu dhacayaa {int(tot)} maalmood kadib.\n\n**-»** Haddii aad caawin u bahantahay ama cilld ay kuhaysato la xidhiidh @terez1s",
                     )
                     return final
                 else:
@@ -993,7 +993,7 @@ async def callback(message, CallbackQuery):
 
             mohh = await bot.ask(
                 CallbackQuery.message.chat.id,
-                "Fadlan soo qor Numberka aad rabto inaad lacagta ku bixiso.\n**EVC**: [25261xxxxxxx](https://t.me/Som_InfoBot)\n**ZAD**: [25263xxxxxxx](https://t.me/Som_InfoBot)",
+                "Fadlan soo qor Numberka aad rabto inaad lacagta ku bixiso.\n**EVC**: [25261xxxxxxx](https://t.me/Som_InfoBot)\n**ZAD**: [25263xxxxxxx](https://t.me/SominfBot)",
                 disable_web_page_preview=True,
             )
             if mohh.text == "/start" or mohh.text == "/iibso" or "/no" in mohh.text:
